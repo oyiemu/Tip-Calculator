@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="favicon.ico"
+    />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="container-heading">
+        <h3>SPLI<br />TTER</h3>
+      </div>
+      <div class="container-body">
+        <div class="flex-item-1">
+          <div class="bill">
+            <div class="header-wrapper">
+              <h5>Bill</h5>
+              <h5 class="hidden" id="error-bill">Please Enter valid input</h5>
+            </div>
+            <input type="text" name="bill" id="bill" placeholder="0" />
+          </div>
+
+          <!-- NUMBER OF PEOPLE -->
+          <div class="number-of-people">
+            <div class="header-wrapper">
+              <h5>Number of people</h5>
+              <h5 class="hidden" id="error-number">Please Enter valid input</h5>
+            </div>
+            <input type="text" name="people" id="people" placeholder="0" />
+          </div>
+
+          <!-- SELECT TIP -->
+          <div class="select-tip">
+            <h5>Select Tip</h5>
+            <div class="option-wrapper">
+              <div class="tip-option">
+                <h4 data-percentage="5">5%</h4>
+              </div>
+              <div class="tip-option">
+                <h4 data-percentage="10">10%</h4>
+              </div>
+              <div class="tip-option">
+                <h4 data-percentage="15">15%</h4>
+              </div>
+              <div class="tip-option">
+                <h4 data-percentage="25">25%</h4>
+              </div>
+              <div class="tip-option">
+                <h4 data-percentage="50">50%</h4>
+              </div>
+              <div class="last-tip-option">
+                <input
+                  placeholder="Custom"
+                  type="text"
+                  name="custom"
+                  id="custom"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FLEX-ITEM-TWO -->
+        <div class="flex-item-2">
+          <div class="tip-amount">
+            <div class="tip-text">
+              <h4>Tip Amount</h4>
+              <p>/ person</p>
+            </div>
+            <div class="tip-amount-value">
+              <img src="./images/icon-dollar-2.svg" alt="dollar-sign" />
+              <h2 id="tip-amount">0.00</h2>
+            </div>
+          </div>
+
+          <div class="total-amount">
+            <div class="total-amount-text">
+              <h4>Total</h4>
+              <p>/ person</p>
+            </div>
+            <div class="total-amount-value">
+              <img src="./images/icon-dollar-2.svg" alt="dollar-sign" />
+              <h2 id="total-tip-amount">0.00</h2>
+            </div>
+          </div>
+          <button class="btn">RESET</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
